@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Станция Технического Обслуживания</title>
+<style type="text/css">
+
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+b{font-size: 110%;}
+em{color: dimgrey;}
+
+#maincontainer{
+width: 100%; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+}
+
+#topsection{
+background: #EAEAEA;
+height: 90px; /*Height of top section*/
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+#contentwrapper{
+float: left;
+width: 40%;
+}
+
+#contentcolumn{
+margin-right: 250px; /*Margin for content column. Should be (RightColumnWidth + LeftColumnWidth)*/
+}
+
+#leftcolumn{
+float: left;
+width: 50%; /*Width of left column in pixel*/
+margin-left: -370px; /*Set margin to -(LeftColumnWidth + RightColumnWidth)*/
+background: #FFDEAD;
+}
+
+#rightcolumn{
+float: right;
+width: 29%; /*Width of right column in pixels*/
+margin-left: -190px; /*Set margin to -RightColumnWidth*/
+background: #DEB887;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: black;
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+color: #FFFF80;
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+
+/* ####### responsive layout CSS ####### */
+
+@media (max-width: 840px){ /* 1st level responsive layout break point- drop right column down*/
+	#maincontainer{
+	width: 100%;
+	}
+
+	#leftcolumn{
+	margin-left: -250px; /*Set margin to -LeftColumnWidth*/
+	}
+	
+	#rightcolumn{
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+	}
+	
+	#contentcolumn{
+	margin-right: 180px; /*Set margin to LeftColumnWidth*/
+	}
+}
+
+@media (max-width: 600px){ /* 2nd level responsive layout break point- drop left column down */
+	#leftcolumn{
+	float: none;
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+	}
+	
+	#contentcolumn{
+	margin-right: 0;
+	}
+}
+
+   .card IMG { position: relative; }
+   .three { top: 50px; left: 55px; z-index: 5; }
+   .seven { left: -120px; top: 25px; z-index: 2;}
+   .ace { left: -295px; z-index: 1; }
+   .card IMG:hover { z-index: 10; }</style>
+
+</style>
+<script type='text/javascript'>
+// Функция выводит текст на страницу
+function messageWrite() {
+   document.write('И зачем ты нажал на меня?');
+}
+</script>
+<style type="text/css">
+.popup {width: 150px; cursor:pointer;}
+.popup:focus {width: auto;}
+</style>
+
+</head>
+<body>
+<div id="maincontainer">
+
+<div id="topsection"><div class="innertube"><h1>Станция Технического Обслуживания</h1></div></div>
+
+<div id="contentwrapper">
+<div id="contentcolumn">
+<div class="innertube"><b>Плановое ТО: <em><br>
+Типы услуг:<br>
+
+Замена антифриза<br>
+Замена роликов<br>
+Замена ремня ГРМ<br>
+Замена масла в двигателе<br>
+Замена масла КПП и АКПП<br>
+Замена свечей зажигания<br>
+Замена тормозных дисков, колодок</em></b> <script type="text/javascript"></script></div>
+</div>
+</div>
+
+<div id="leftcolumn">
+<div class="innertube"><b>Комплексный осмотр автомобиля перед покупкой <em><br>В наше время автомобиль - это не только средство передвижения, а еще и роскошь, которая требует значительных затрат и усилий для его приобретения. Из сарая, дом не построишь, поэтому чтобы избежать дорогостоящих ремонтов, битых авто, наши сотрудники помогут вам осуществить правильный выбор. <br>
+<br>
+Этапы:<br>
+<br>
+Проверка ЛКП (лакокрасочное покрытие).<br>
+Компьютерная диагностика.<br>
+Диагностика ходовой<br>
+Замер компрессии<br>
+Общий осмотр на предмет течей,  целостности кузова.</em></b> <script type="text/javascript"></script></div>
+</div>
+
+<div id="rightcolumn">
+<div class="innertube"><b>Отзывы <em>Алексей<br>
+Спасибо. Все отлично. Главное что правильно установили причину!</em></b> <script type="text/javascript"></script></div>
+</div>
+
+<div id="footer"><a href="https://vk.com/audios174321311?section=all">Наш Сайт</a></div>
+
+</div>
+
+<img src="https://i.pinimg.com/564x/db/f1/ff/dbf1ff732b0c09173c6baf1b9adcc05c.jpg" class="popup" tabindex="1"/>
+
+
+<input type='button' value='Нажми на меня' onclick='messageWrite()' />
+
+</body>
+</html>
